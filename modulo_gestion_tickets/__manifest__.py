@@ -1,12 +1,13 @@
 {
-    'name': 'Gestor de Tickets Personalizado',
+    'name': 'Etracker Ticket System',
     'version': '1.0',
-    'summary': 'Sistema para administrar reportes',
-    'category': 'Tools',
+    'category': 'Services',
+    'summary': 'Gestión de tickets interna para Etracker',
     'depends': ['base'],
     'data': [
-        'views/tickets_principal_view.xml',
+        'views/ticket_views.xml',
     ],
     'installable': True,
     'application': True,
+    'license': 'LGPL-3',
 }
