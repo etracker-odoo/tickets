@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_ticket_soporte_tree" model="ir.ui.view">
+        <field name="name">ticket.soporte.tree</field>
+        <field name="model">ticket.soporte</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="prioridad"/>
+                <field name="fecha_reporte"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_ticket_soporte" model="ir.actions.act_window">
+        <field name="name">Mis Tickets de Soporte</field>
+        <field name="res_model">ticket.soporte</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_tickets_raiz" name="Tickets Soporte"/>
+    <menuitem id="menu_tickets_lista" name="Ver Tickets" 
+              parent="menu_tickets_raiz" action="action_ticket_soporte"/>
+</odoo>
